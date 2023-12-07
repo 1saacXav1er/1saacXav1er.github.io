@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="mystyle.css">
+	<title>Document</title>
+</head>
+<body>
+
+	<h1>Bear, Hunter, Ninja!</h1>
+
+	<div id="GAMEWINDOW">
+		<dialog id="CHOICE_DIALOG">
+		<form>
+			<p>Make your choice</p>
+			<select name="item_selection" id="ITEM_SELECTION">
+				<option value="default">---</option>
+				<option>bear</option>
+				<option>zombie</option>
+				<option>ninja</option>
+			</select>
+			<br> <br>
+			<button value="cancel" formmethod="dialog">Cancel</button>
+			<button id="CONFIRM_BTN" value="default">Confirm</button>
+		</form>
+		</dialog>
+
+		<div id="PLAYER" class="card">
+			<h2 class="card_header">Player</h2>
+			<div class="item_wrapper">
+				<div id="PLAYER_ITEM" class="item"></div>
+				<output class="choice"></output>
+			</div>
+		</div>
+
+		<div id="INFO">
+			<div id="ROUNDS">Round<p>0</p></div>
+			<div class="score_box">
+				<div>
+					<h4>Score</h4>
+					<div id="PLAYER_SCORE">0</div>
+				</div>
+				<div>
+					<h4>Score</h4>
+					<div id="COMPUTER_SCORE">0</div>
+				</div>
+			</div>
+			<div id="OUTCOME"></div>
+			<button id="PLAY_BTN" onclick="startGame()">Play</button>
+		</div>
+
+		<div id="COMPUTER" class="card">
+			<h2 class="card_header">Computer</h2>
+			<div class="item_wrapper">
+				<div id="COMPUTER_ITEM" class="item"></div>
+				<div id="COMPUTER_CHOICE" class="choice"></div>
+			</div>
+		</div>
+	</div>
+
+</body>
+<script type="text/javascript" src="/projectOne/index.js"></script>
+</html>

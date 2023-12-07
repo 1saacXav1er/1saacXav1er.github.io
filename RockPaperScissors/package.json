@@ -1,0 +1,16 @@
+{
+  "name": "Bear, Zombie, Ninja",
+  "version": "1.0.0",
+  "description": "A game like Rock Paper Scissors.",
+  "main": "index.html",
+  "type": "module",
+  "scripts": {
+
+  },
+  "preferGlobal": true,
+  "author": "Isaac Xavier",
+  "license": "ISC",
+  "dependencies": {
+
+  }
+}
